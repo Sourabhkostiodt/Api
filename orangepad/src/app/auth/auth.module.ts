@@ -1,0 +1,34 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { AuthRoutingModule } from './auth-routing.module';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+
+// import { SidebarComponent } from '../shared/component/sidebar/sidebar.component';
+
+@NgModule({
+  declarations: [
+    LoginComponent,
+    RegisterComponent,
+    ResetPasswordComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+  ],
+  imports: [
+    CommonModule,
+    AuthRoutingModule
+  ],
+  exports:[
+    LoginComponent,
+    RegisterComponent,
+    ResetPasswordComponent
+  ]
+
+})
+export class AuthModule { }

@@ -1,0 +1,18 @@
+
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}/* Should be removed. Only for demonstration */
+.welcome-text{
+  padding-top: 20px;
+}
+
+
+/* Clear floats after the columns */
